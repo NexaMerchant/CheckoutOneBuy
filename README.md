@@ -9,7 +9,6 @@
 
 # How to Install
 
-
 ```
 NexaMerchant\CheckoutOneBuy\Providers\CheckoutOneBuyServiceProvider::class,
 ```
