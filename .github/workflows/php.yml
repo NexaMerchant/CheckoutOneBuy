@@ -75,9 +75,9 @@ jobs:
       - name: Show laravel version
         run: composer show laravel/framework
 
-      # create Nexa Merchant Core composer project
-      - name: Create Nexa Merchant Core composer project
-        run: composer create-project --prefer-dist nexamerchant/core NexaMerchantCore
+      # # create Nexa Merchant Core composer project
+      # - name: Create Nexa Merchant Core composer project
+      #   run: composer create-project --prefer-dist nexamerchant/core NexaMerchantCore
 
       # # Install NPM dependencies
       # - name: Install Dependencies
