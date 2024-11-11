@@ -92,7 +92,7 @@ class ProductV5Controller extends Controller
 
         $package_products = [];
         $productBaseImage = product_image()->getProductBaseImage($product);
-        $package_products = \Nicelizhi\OneBuy\Helpers\Utils::makeProducts($product, [2,1,3,4]);
+        $package_products = \NexaMerchant\CheckoutOneBuy\Helpers\Utils::makeProducts($product, [2,1,3,4]);
 
         $skus = [];
 

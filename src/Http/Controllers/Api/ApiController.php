@@ -67,7 +67,7 @@ class ApiController extends Controller
         $ip_country = $request->server('HTTP_CF_IPCOUNTRY');
 
         // currency by ip
-        $currency = \Nicelizhi\OneBuy\Helpers\Utils::getCurrencyByCountry($ip_country);
+        $currency = \NexaMerchant\CheckoutOneBuy\Helpers\Utils::getCurrencyByCountry($ip_country);
 
         $currency_get = $request->input('currency');
         if(!empty($currency_get)) {
@@ -130,7 +130,7 @@ class ApiController extends Controller
             }
     
             $package_products = [];
-            $package_products = \Nicelizhi\OneBuy\Helpers\Utils::makeProducts($product, [2,1,3,4]);
+            $package_products = \NexaMerchant\CheckoutOneBuy\Helpers\Utils::makeProducts($product, [2,1,3,4]);
             $product = new ProductResource($product);
             $data['product'] = $product;
             $data['package_products'] = $package_products;

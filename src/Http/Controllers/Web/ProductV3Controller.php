@@ -93,7 +93,7 @@ class ProductV3Controller extends Controller
         $package_products = [];
         $productBaseImage = product_image()->getProductBaseImage($product);
         //$package_products = $this->makeProducts($product, [2,1,3,4]);
-        $package_products = \Nicelizhi\OneBuy\Helpers\Utils::makeProducts($product, [2,1,3,4]);
+        $package_products = \NexaMerchant\CheckoutOneBuy\Helpers\Utils::makeProducts($product, [2,1,3,4]);
 
         // 获取 faq 数据
         $redis = Redis::connection('default');
